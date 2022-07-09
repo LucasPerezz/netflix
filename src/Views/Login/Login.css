@@ -4,7 +4,8 @@
 
 .login-container {
     background-color: black;
-    height: 100vh;
+    min-height: 100vh;
+    height: max-content;
 }
 
 .login--container__logo {
@@ -27,6 +28,8 @@
     margin-top: 30px;
     margin-bottom: 100px;
     background-color: black;
+    display: flex;
+    flex-direction: column;
 }
 
 .login-form--container h2 {
