@@ -1,0 +1,219 @@
+.background {
+    display: none;
+}
+
+.login-container {
+    background-color: black;
+    height: 100vh;
+}
+
+.login--container__logo {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 30%;
+    max-width: 200px;
+}
+
+.login-form--container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 450px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    background-color: black;
+}
+
+.login-form--container h2 {
+    color: var(--netflix-font-color);
+    font-size: 3.3rem;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.login-form {
+    width: 90%;
+    min-width: 288px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form form input {
+    width: 100%;
+    max-width: 450px;
+    height: 50px;
+    background-color: var(--background-movie-selected);
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    
+}
+
+.login-form form input::placeholder {
+    color: var(--text-color-disable);
+    position: relative;
+    left: 24px;
+    font-size: var(--font-size-subText);
+}
+
+.login-form form button {
+    width: 100%;
+    max-width: 450px;
+    height: 40px;
+    border: none;
+    background-color: var(--netflix-color);
+    border-radius: 4px;
+    color: var(--netflix-font-color);
+    font-size: var(--font-size-text);
+    font-weight: bold;
+    margin-bottom: 16px;
+    margin-top: 22px;
+}
+
+.login-form-remember-and-helper {
+    width: 90%;
+    min-width: 288px;
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.login-remember-me-label-text {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.login-remember-me-label-text input {
+    width: 16px;
+    height: 16px;
+}
+
+.login-remember-me-label-text {
+    font-size: var(--font-size-subText);
+    color: var(--text-color-disable);
+}
+
+.helper {
+    font-size: var(--font-size-subText);
+    color: var(--text-color-disable);
+}
+
+.login-signup-now {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    min-width: 288px;
+    max-width: 700px;
+    margin: 24px auto;
+    text-align: left;
+    gap: 10px;
+}
+
+.login-signup-now h6 {
+    font-size: var(--font-size-text);
+    color: var(--text-color-disable);
+    font-weight: 300;
+}
+
+.login-signup-now h6 span {
+    color: var(--netflix-font-color);
+}
+
+.login-signup-now p {
+    font-size: var(--font-size-subText);
+    color: var(--text-color-disable);
+}
+
+.login-signup-now p span {
+    color: rgb(31, 102, 255);
+}
+
+footer {
+    border-top: 1px solid var(--text-color-disable);
+    padding: 10px 10px;
+}
+
+footer h6 {
+    color: var(--text-color-disable);
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.footer-container {
+    width: 90%;
+    min-width: 288px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top: 20px;
+    
+}
+
+.footer-container ul li {
+    color: var(--text-color-disable);
+    font-size: 1.4rem;
+    list-style: none;
+    margin: 15px 0;
+    text-align: left;
+    font-family: "netflix-sans", sans-serif;
+}
+
+@media screen and (min-width: 740px) {
+    .background {
+        display: block;
+        min-height: 100vh;
+        height: 100%;
+        min-width: 100%;
+        width: 100%;
+        position: absolute;
+        filter: brightness(50%);
+        object-fit: cover;
+        overflow: hidden;
+        z-index: -999;
+    }
+
+    .background img {
+        max-height: 100vh;
+        min-width: 100%;
+    }
+
+    .login-container {
+        background-color: transparent;
+        height: 100vh !important;
+    }
+
+
+    .login-form--container {
+        margin-bottom: 40px;
+        margin-top: 0;
+    }
+
+    .login-form--container {
+        background-color: rgba(0,0,0,.75);
+        padding: 40px 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer {
+        display: none;
+    }
+
+
+    
+    
+}
