@@ -15,6 +15,10 @@ html {
   
 }
 
+body {
+    background-color: var(--netflix-background-color);
+}
+
 :root {
     --netflix-background-color: #141414;
     --netflix-color: #e50914;

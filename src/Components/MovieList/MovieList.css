@@ -1,0 +1,32 @@
+.movie-list-container {
+    display: inline;
+}
+
+.movie-container {
+    margin-right: 10px;
+}
+
+.movie-container img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.card-container {
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+    background-color: black;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+.card-content {
+    min-height: 10vh;
+}
+
+.card-text {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+}

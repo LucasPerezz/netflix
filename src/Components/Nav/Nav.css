@@ -1,0 +1,34 @@
+.navbar ul {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar ul li {
+    list-style: none;
+    color: var(--netflix-font-color);
+    font-size: 1.7rem;
+}
+
+@media screen and (max-width: 950px) {
+    .navbar {
+        position: absolute;
+        width: 70%;
+        left: 30px;
+        top: 70px;
+        max-width: 400px;
+        background-color: rgba(0,0,0,.9);
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        font-size: 1.3rem;
+    }
+}
