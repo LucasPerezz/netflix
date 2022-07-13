@@ -11,14 +11,60 @@
     max-width: 400px;
 }
 
+.card-average-top {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 3;
+    background-color: rgb(0, 218, 11);
+    right: -10px;
+    top: -10px;
+}
+
+.card-average-mid {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 3;
+    background-color: rgb(219, 223, 0);
+    right: -10px;
+    top: -10px;
+}
+
+
+.card-average-down {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 3;
+    background-color: rgb(231, 35, 0);
+    right: -10px;
+    top: -10px;
+}
+
+.vote-average {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    font-size: 1.7rem;
+}
+
+
 .card-container {
-    width: 50%;
+    width: 40%;
     max-width: 300px;
     height: auto;
     background-color: black;
     margin-bottom: 20px;
     border: none;
     border-radius: 4px;
+    position: relative;
 }
 
 .card-content {

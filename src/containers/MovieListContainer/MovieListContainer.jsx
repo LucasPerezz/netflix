@@ -15,6 +15,7 @@ const MovieListContainer = () => {
 
   return (
     <>
+
       <div className='movie-list-container'>
       {movies.map((movie) => {
         return (

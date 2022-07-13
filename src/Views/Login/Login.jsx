@@ -1,5 +1,4 @@
 import React from 'react'
-import LOGO from '../../Assets/netflix-logo.png'
 import BG from '../../Assets/background-login.jpg'
 import './Login.css'
 
@@ -8,11 +7,6 @@ const Login = () => {
     <div>
     <div className='background'><img src={BG} alt="" /></div>
     <div className='login-container'>
-        <nav>
-            <div className='login--container__logo'>
-                <img src={LOGO} alt="" className='logo'/>
-            </div>
-        </nav>
 
         <section className='login-form--container'>
             <h2>Iniciar sesion</h2>
@@ -35,7 +29,7 @@ const Login = () => {
             </div>
 
             <div className='login-signup-now'>
-                <h6>¿Primera vez en Netflix? <span>Suscribete ahora</span></h6>
+                <h6>¿Primera vez? <span>Suscribete ahora</span></h6>
                 <p>Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot. <span>Más info.</span></p>
             </div>
         </section>
