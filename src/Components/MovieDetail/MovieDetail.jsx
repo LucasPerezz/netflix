@@ -9,7 +9,7 @@ const MovieDetail = ({detail}) => {
     useEffect(() => {
         fetch(`https://api.themoviedb.org/3/movie/${detail.id}/similar?api_key=f02447794a311bf45444ad8de8d22991&language=es`)
         .then(res => res.json())
-        .then(data =>  setSimilarMovies(data.results.slice(0, 5)))
+        .then(data =>  setSimilarMovies(data.results.slice(0, 7)))
       }, [])
       
       console.log(detail)
