@@ -15,7 +15,15 @@ const MovieDetailContainer = () => {
 
       }, [id])
 
-      console.log(movieDetail)
+
+      useEffect(() => {
+        fetch("https://api.themoviedb.org/3/trending/all/day?api_key=f02447794a311bf45444ad8de8d22991&language=es")
+        .then(response => response.json())
+        .then(json => setMovieDetail(json.results.filter((item) => item.id === Number(id))))
+
+      }, [id])
+
+      
       
     
     return (

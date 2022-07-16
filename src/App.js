@@ -4,10 +4,12 @@ import MovieDetailContainer from './containers/MovieDetailContainer/MovieDetailC
 import Navbar from "./containers/Navbar/Navbar";
 import Home from "./Views/Home/Home";
 import Login from "./Views/Login/Login";
+import { genresContext } from "./context/useContextPro";
 
 function App() {
   return (
     <>
+      <genresContext.Provider>
       <Router>
         <Navbar />
         <Routes>
@@ -16,6 +18,7 @@ function App() {
           <Route path="/login" element={<Login />} />
         </Routes>
       </Router>
+      </genresContext.Provider>
     </>
   );
 }
