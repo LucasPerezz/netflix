@@ -14,7 +14,9 @@ const Navbar = () => {
         <div className="navbar-container-mobile">
           <div className="navbar-mobile">
           <div className="navbar-logo">
+            <Link to={"/"}>
               <img src={LOGO} alt="" />
+              </Link>
             </div>
             <h3 onClick={() => setNavbar(!navbarToggle)}>Explorar</h3>
             <span>
@@ -58,7 +60,9 @@ const Navbar = () => {
         <div className="navbar-container">
           <div className="navbar">
             <div className="navbar-logo">
+              <Link to={"/"}> 
               <img src={LOGO} alt="" />
+              </Link>
             </div>
             <Nav />
           </div>
