@@ -10,10 +10,12 @@ const Nav = () => {
               <Link to={'/'}>
                 <li>Inicio</li>
               </Link>
+              <Link to={'/tv'}>
               <li>Series</li>
+              </Link>
+              <Link to={'/movie'}>
               <li>Peliculas</li>
-              <li>Novedades populares</li>
-              <li>Mi lista</li>
+              </Link>
             </ul>
           </div>
     </div>

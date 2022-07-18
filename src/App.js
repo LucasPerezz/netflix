@@ -3,8 +3,8 @@ import "./App.css";
 import MovieDetailContainer from './containers/MovieDetailContainer/MovieDetailContainer'
 import Navbar from "./containers/Navbar/Navbar";
 import Home from "./Views/Home/Home";
-import Login from "./Views/Login/Login";
 import { genresContext } from "./context/useContextPro";
+import MovieListContainer from "./containers/MovieListContainer/MovieListContainer";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/detail/:id" element={<MovieDetailContainer />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/:media_type" element={<MovieListContainer />} />
         </Routes>
       </Router>
       </genresContext.Provider>
